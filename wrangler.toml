@@ -14,9 +14,17 @@ class_name = "Room"
 name = "REG"
 class_name = "Registry"
 
+[[durable_objects.bindings]]
+name = "LOBBY"
+class_name = "Lobby"
+
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["Room", "Registry"]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = ["Lobby"]
 
 [observability]
 enabled = true
